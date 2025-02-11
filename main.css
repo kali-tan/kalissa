@@ -1,0 +1,678 @@
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    display:flex;
+    /* background-color: #cbe58e; */
+    margin:0;
+    height:140vh;
+    width:100vw;
+    cursor: url('files/icons/cursor-pikachu.png'),auto;
+    background-image: url('files/grid-background.png'); 
+    background-size: 100% 100%;
+    background-blend-mode: lighten;
+    /* background-color:#ffffff; */
+}
+
+.main-container {
+    display:flex;
+    flex-direction:column;
+    /* justify-content:space-between; */
+    font-family: "argent-pixel-cf", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#ffffff;
+    gap:8%;
+    width:100vw;
+}
+
+.header {
+    background-color:#cc0000;
+    position:sticky;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:100vw;
+    padding:2%;
+    padding-left:4%;
+    padding-right:4%;
+    /* height:20vh; */
+    top:0;
+    box-shadow: 0px 10px 10px gray;
+    z-index:2;
+}
+
+.logo {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.logo:hover {
+    /* animation: none; */
+    color:#000000;
+    font-size:35px;
+    transition:1s;
+    cursor: url('files/icons/cursor-pichu.png'),auto;
+}
+
+.menu {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.item:hover {
+    /* animation: none; */
+    color:rgb(79, 70, 70);
+    font-size:16px;
+    transition:0.5s;
+    cursor: url('files/icons/cursor-pichu.png'),auto;
+}
+
+.second-row {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    padding-left:4%;
+    padding-right:4%;
+    height:80vh;
+    gap:40px;
+}
+
+.logo {
+    font-size:30px;
+}
+
+.name {
+    width:50vw;
+    height:45vh;
+    background-color:white;
+    border-style:solid;
+    border-top-width: 40px;
+    border-color:#cc0000;
+}
+
+.third-row{
+    height:50vh;
+}
+
+.footer {
+    height:5vh;
+}
+
+.bookshelf {
+    display:flex;
+    justify-content:space-between;
+    flex-direction:column;
+    /* gap:2%; */
+    font-size:20px;
+    /* margin-right:10%; */
+    color:#107e57;
+}
+
+.decor {
+    display:flex;
+    justify-content:space-around;
+    flex-direction:row;
+}
+
+.bio {
+    background-color:white;
+    padding:10px;
+    border-style:solid;
+    border-width:5px;
+    border-color:#cc0000;
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    gap:4%;
+    font-size:20px;
+    /* margin-right:10%; */
+    color:rgb(79, 70, 70);
+} 
+
+.currently {
+    font-size:30px;
+    font-style:italic;
+    animation: blink 3s infinite linear;
+    color:#cc0000;
+}
+
+.menu {
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    gap:15%;
+    font-size:15px;
+    margin-right:5%;
+}
+
+.item {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.cursor-selection {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    color:rgb(79, 70, 70);
+}
+
+.cursor-selection1 {
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    color:rgb(79, 70, 70);
+}
+
+.starter {
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    color:white;
+    background-color:#cc0000;
+    padding:4%;
+    width:100%;
+}
+
+.starter2 {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size:20px;
+    background-color:white;
+    border-color:#cc0000;
+    border-width:5px;
+    padding:4%;
+    border-style:solid;
+}
+
+.starter2:hover {
+    font-size:17px;
+    background-color:rgba(79, 70, 70, 0.418);
+    color:white;
+    transition:0.5s;
+    cursor: url('files/icons/cursor-pichu.png'),auto;
+}
+
+.third-row {
+    display:flex;
+    flex-direction:column;
+    margin-bottom:10%;
+}
+
+.featured {
+    display:flex;
+    /* justify-content:center; */
+    font-size:40px;
+    color:#ffffff;
+    animation: blink 3s linear infinite;
+    background-color:#cc0000;
+    padding:1%;
+    width:50vw;
+    /* animation: slide 7s linear infinite; */
+}
+
+.works {
+    /* margin-left:30%; */
+    /* margin-top:5%; */
+    height:40vh;
+    display:flex;
+    background-color:#ffffff;
+    padding:5%;
+    border-style:solid;
+    border-top-width:30px;
+    border-color:#cc0000;
+}
+
+.works:hover {
+    padding:2%;
+    /* opacity:0.5; */
+    background-color:rgba(79, 70, 70, 0.518);
+    transition:1s;
+    cursor: url('files/icons/cursor-pichu.png'),auto;
+}
+
+.display {
+    /* margin-left:30%; */
+    margin-top:5%;
+    height:40vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:2%;
+    flex-wrap:wrap;
+}
+
+/* animations */
+
+@keyframes blink{
+    0% {
+        color:#cc0000;
+    }
+
+    50% {
+        color:#ffffff;
+    }
+
+    100% {
+        color:#cc0000;
+    }
+
+}
+
+/* @keyframes slide {
+    0%{
+        transform:translateX(-100%);
+    }
+    100%{
+        transform:translateX(100%)
+    }
+} */
+
+/* cursor selection */
+
+.chimchar:hover {
+    cursor: url('files/icons/cursor-chimchar.png'),auto;
+}
+
+.squirtle:hover {
+    cursor: url('files/icons/cursor-squirtle.png'),auto;
+}
+
+.bulbasaur:hover {
+    cursor: url('files/icons/cursor-bulbasaur.png'),auto;
+}
+
+/* THIS IS WHERE I'M STARTING THE ABOUT PAGE */
+
+.trainer-card {
+    /* background-color:#ffffff55; */
+    width:50%;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    height:100%;
+}
+
+.information {
+    /* background-color:orange; */
+    width:70vw;
+    display:flex;
+    flex-direction:column;
+    gap:5%;
+    /* justify-content: space-evenly; */
+}
+
+.boldtitle {
+    background-color:white;
+    color:white;
+    display:flex;
+    flex-direction:column;
+}
+
+.toptext {
+    background-color:#cc0000;
+    padding:10px;
+    font-size:30px;
+}
+
+.bottomtext {
+    background-color:white;
+    color:rgb(79, 70, 70);
+    padding:10px;
+    border-style:solid;
+    border-color:rgb(79, 70, 70);
+    border-width:2px;
+    border-top-color:#cc0000;
+    font-size:30px;
+}
+
+.details {
+    background-color:white;
+    color:rgb(79, 70, 70);
+    border-style:solid;
+    border-color:#cc0000;
+    border-width:2px;
+    padding:10px;
+    border-left-width:25px;
+    border-right-width:25px;
+    font-size:20px;
+}
+
+.skills {
+    display:flex;
+    flex-direction:row;
+    font-size:15px;
+    gap:2%;
+    flex-wrap:wrap;
+    row-gap:5px;
+}
+
+.types {
+    color:white;
+    border-style:solid;
+    border-color:rgb(79, 70, 70);
+    border-width:2px;
+    border-radius:10px;
+    padding:15px;
+}
+
+.box {
+    background-color:#cc0000;
+    color:white;
+}
+
+.otherdetails {
+    background-color:#cc0000;
+    color:white;
+    padding:10px;
+    font-size:25px;
+}
+
+.content1 {
+    /* background-color:white; */
+    color:rgb(79, 70, 70);
+    padding:10px;
+    font-size:15px;
+    gap:1px;
+}
+
+.content2 {
+    /* background-color:white; */
+    color:rgb(79, 70, 70);
+    padding:10px;
+    font-size:20px;
+    gap:1px;
+}
+
+.thirdrow{
+    height:50vh;
+    margin-top:15vh;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-evenly;
+}
+
+.blahblah {
+    display:flex;
+    flex-direction:row;
+    gap:10%;
+    justify-content: center;
+    margin-top:10%;
+}
+
+.tab {
+    display:flex;
+    flex-direction:column;
+    width:40vw;
+    border-width:2px;
+    border-color:#cc0000;
+    border-style:solid;
+    background-color:rgba(255, 255, 255, 0.598);
+    height:40vh;
+}
+
+.tab:hover {
+    background-color:white;
+}
+
+.second-container {
+    display:flex;
+    justify-content: space-around;
+}
+
+.leftcolumn {
+    width:20vw;
+    margin-left:5%;
+    background-color:white;
+    border-style:solid;
+    border-color:#cc0000;
+    border-left-width:25px;
+    height:60vh;
+    color:rgb(79, 70, 70);
+    padding:20px;
+    font-size:2vh;
+}
+
+.list {
+    margin:7px;
+    padding:5px;
+}
+
+.rightcolumn {
+    margin-right:5%;
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    gap:3%;
+    margin-left:5%;
+}
+
+.square {
+    height:30%;
+    width:30%;
+    padding-bottom:2%;
+    background-color:#cc0000;
+    /* flex-grow:1; */
+    position:relative;
+}
+
+.img_description_layer {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    /* background-color:#cc0000; */
+    color: #ffffff;
+    visibility:hidden;
+    font-size:3vh;
+    opacity:0;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    transition: opacity .2s, visibility .2s;
+}
+
+.img_description {
+    transition:.2s;
+    transform: translateY(1em);
+}
+
+.square:hover .img_description_layer {
+    visibility:visible;
+    opacity:1;
+}
+
+.square:hover .img_description {
+    transform:translateY(0);
+}
+
+.square:hover {
+    opacity:50%;
+}
+
+.dot {
+    position:relative;
+    width:20%
+}
+
+.dot:hover {
+    opacity:50%;
+}
+
+.list:hover {
+    border-style:solid;
+    border-width:3px;
+    border-color:#cc0000;
+    border-radius:10px;
+    /* padding:10px; */
+}
+
+/* this is the color codes for pokemon types */
+
+.bug {
+    background-color:#94bc4a;
+}
+
+.dragon {
+    background-color:#6a7baf;
+}
+
+.electric {
+    background-color:#e5c531;
+}
+
+.fairy {
+    background-color:#e397d1;
+}
+
+.fire {
+    background-color:#ea7a3c;
+}
+
+.grass {
+    background-color: #71c558;
+}
+
+.water {
+    background-color:#539ae2;
+}
+
+
+/* max-width media queries are desktop-first */
+
+/* min-wdth media queries are mobile first */
+
+@media screen and (max-width:900px) {
+    .blahblah {
+        display:flex;
+        flex-direction:column;
+    
+    }
+}
+
+@media screen and (max-width:700px) {
+    .blahblah {
+        display:flex;
+        flex-direction:column;
+
+    }
+}
+
+@media screen and (max-width:600px) {
+.blahblah {
+    display:flex;
+    flex-direction:column;
+}
+}
+
+/* /* this begins the individual page layouts */
+
+
+.contain {
+    display:flex;
+    flex-direction:column;
+    margin-top:0px;
+    /* background-color:red; */
+    color:#cc0000;
+}
+
+.work-title {
+    display:flex;
+    /* font-size:50px; */
+    margin-left:3%;
+    flex-direction:column;
+    color:white;
+    background-color:#cc0000;
+    padding:3%;
+}
+
+.main-title {
+    font-size:6vh;
+}
+
+.subtitle {
+    font-size:3vh;
+    animation: blink 3s infinite linear;
+}
+
+.work-describe {
+    width:60vw;
+    background-color:white;
+    color:#cc0000;
+    padding:3%;
+    border-style:solid;
+    border-color:#cc0000;
+    border-width:5px;
+    font-size:2vh;
+}
+
+.work-context {
+    background-color:white;
+    color:#cc0000;
+    padding:3%;
+    border-style:solid;
+    border-color:#cc0000;
+    border-width:5px;
+    font-size:2vh;
+}
+
+.work-information {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    padding:3%;
+    margin-top:0%;
+}
+
+.picture-gallery {
+    /* padding:2%; */
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+.picture-row {
+    flex-wrap:wrap;
+    display:flex;
+    gap:1%;
+    justify-content: space-evenly;
+    margin-bottom:2%;
+}
+
+.caption-row {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+}
+
+.caption {
+    width:30%;
+    color:rgb(79, 70, 70);
+    font-size:12px;
+}
+
+.caption2 { 
+    width:20%;
+    color:rgb(79, 70, 70);
+    font-size:12px;
+}
+
+.caption3 {
+    width:45%;
+    color:rgb(79, 70, 70);
+    font-size:12px;
+}
+
+.caption5 {
+    width:90%;
+    color:rgb(79, 70, 70);
+    font-size:12px;
+}
