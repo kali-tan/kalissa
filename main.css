@@ -87,7 +87,7 @@ body {
 
 .name {
     width:50vw;
-    height:45vh;
+    /* height:45vh; */
     background-color:white;
     border-style:solid;
     border-top-width: 40px;
@@ -214,7 +214,8 @@ body {
     animation: blink 3s linear infinite;
     background-color:#cc0000;
     padding:1%;
-    width:50vw;
+    max-width:600px;
+    /* width:50vw; */
     /* animation: slide 7s linear infinite; */
 }
 
@@ -675,4 +676,10 @@ body {
     width:90%;
     color:rgb(79, 70, 70);
     font-size:12px;
+}
+
+@media screen and (max-width:800px) {
+    .second-row {
+        flex-direction:column;
+    }
 }
