@@ -178,6 +178,7 @@ body {
     background-color:#cc0000;
     padding:4%;
     width:100%;
+    font-size:2vh;
 }
 
 .starter2 {
@@ -459,7 +460,7 @@ body {
     height:30%;
     width:30%;
     padding-bottom:2%;
-    background-color:#cc0000;
+    /* background-color:#cc0000; */
     /* flex-grow:1; */
     position:relative;
 }
@@ -681,5 +682,35 @@ body {
 @media screen and (max-width:800px) {
     .second-row {
         flex-direction:column;
+    }
+
+    .starter {
+        width:90%;
+    }
+
+    .bookshelf {
+        gap:2vh;
+    }
+
+    .name {
+        width:90vw;
+    }
+
+    .list {
+        font-size:1vh;
+    }
+
+    .leftcolumn {
+        height:45vh;
+        width:30vw;
+    }
+
+    .trainer-card {
+       width:0;
+       height:0;
+    }
+
+    .information {
+        gap:10px;
     }
 }
