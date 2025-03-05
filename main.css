@@ -23,7 +23,7 @@ body {
     font-weight: 400;
     font-style: normal;
     color:#ffffff;
-    gap:8%;
+    gap:3%;
     width:100vw;
 }
 
@@ -205,19 +205,6 @@ body {
     display:flex;
     flex-direction:column;
     margin-bottom:10%;
-}
-
-.featured {
-    display:flex;
-    /* justify-content:center; */
-    font-size:5vh;
-    color:#ffffff;
-    animation: blink 3s linear infinite;
-    background-color:#cc0000;
-    padding:1%;
-    max-width:600px;
-    /* width:50vw; */
-    /* animation: slide 7s linear infinite; */
 }
 
 .works {
